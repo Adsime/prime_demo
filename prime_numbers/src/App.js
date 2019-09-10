@@ -6,8 +6,9 @@ import './styles/styles.css';
 
 import FrontPage from './pages/FrontPage';
 import PrimeNumbers from './pages/PrimeNumbers';
-import PrimeSlow from './pages/PrimeSlow';
-import PrimeFast from './pages/PrimeFast';
+import Generator from './pages/Generator';
+import Methods from './pages/Methods';
+import TryPrimes from './pages/TryPrimes';
 
 class App extends Component {
 
@@ -50,8 +51,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={FrontPage} />
             <Route path="/primtall" component={PrimeNumbers} />
-            <Route path="/treeeeeeeeeig" component={PrimeSlow} />
-            <Route path="/ZOOOOOOM" component={PrimeFast} />
+            <Route path="/metoder" component={Methods} />
+            <Route path="/generator" component={Generator} />
+            <Route path="/tester" component={TryPrimes} />
             <Route component={FrontPage} />
           </Switch>
         </main>

@@ -12,6 +12,7 @@ class NavigationAppBar extends Component {
 
         this.toggleNavbar = this.toggleNavbar.bind(this);
         this.popModal = this.popModal.bind(this);
+        this.handlePizza = this.handlePizza.bind(this);
     }
 
     toggleNavbar() {
@@ -22,6 +23,11 @@ class NavigationAppBar extends Component {
 
     popModal() {
         this.setState({ show: !this.state.show });
+    }
+
+    handlePizza() {
+        let elem = document.getElementById("pizza");
+        elem.className = elem.className == "pizza_right" ? "pizza_left" : "pizza_right";
     }
 
     render() {
@@ -51,6 +57,9 @@ class NavigationAppBar extends Component {
                         </Button>
                     </ModalFooter>
                 </Modal>
+                <div>
+                    <img id="pizza" className="pizza_right" onClick={this.handlePizza} src="https://pngriver.com/wp-content/uploads/2018/04/Download-Pepperoni-Pizza.png" width="400px"></img>
+                </div>
             </>
         );
     }

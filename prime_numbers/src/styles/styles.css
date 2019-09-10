@@ -22,3 +22,67 @@ td.table-buttons > button {
 td, th {
     vertical-align: middle !important;
 }
+
+.prime_highlight {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: lightblue;
+}
+
+.prime_container {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.prime_base {
+    border: 1px solid white;
+}
+
+.prime_match {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: red;
+}
+
+.gen_numbers {
+    text-align: center;
+    font-size: 10em;
+    text-decoration: underline;
+}
+
+.pizza_right {
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    transform: translateX(80%) rotateZ(1turn);
+    top: 50%;
+    /*transform: rotateZ(1turn) translateX(0);*/
+    transform: spin 5s;
+    transition-duration: 5s;
+}
+
+.pizza_left {
+    z-index: 1000;
+    position: absolute;
+    right: 100%;
+    transform: translateX(20%) rotateZ(-1turn);
+    top: 50%;
+    /*transform: rotateZ(-1turn) translateX(100%);*/
+    transform: spin 5s;
+    transition-duration: 5s;
+}
+
+@keyframes spin {
+	0% {
+        right: 0;
+        transform: translateX(80%) rotateZ(1turn);
+	}
+	100% {
+        right: 100%;
+        transform: translateX(20%) rotateZ(-1turn);
+	}
+}
+
+body{
+    overflow: hidden;
+}
