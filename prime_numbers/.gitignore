@@ -25,3 +25,5 @@ yarn-error.log*
 prime_gen.py
 
 resources
+
+.idea

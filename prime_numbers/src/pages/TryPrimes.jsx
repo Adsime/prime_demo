@@ -35,7 +35,7 @@ class TryPrimes extends Component {
 
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 <Card color="white" className="shadow p-3 mb-5 rounded">
                     <CardBody>
                         <CardTitle tag="h3">Her kan du teste primtall opp til 100000!</CardTitle>

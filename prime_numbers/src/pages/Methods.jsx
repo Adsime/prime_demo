@@ -36,7 +36,7 @@ class Methods extends Component {
     async createArray(name) {
         let retVal = [];
         for (let i = 1; i < this.state.n + 1; i++) {
-            retVal.push(<p id={name + i} className="prime_base" style={{ display: "inline-block", marginLeft: 5, marginRight: 5, fontSize: "2em", color: (i == 1 ? "red" : "black") }}>{i}</p>)
+            retVal.push(<p id={name + i} className="prime_base" style={{ display: "inline-block", marginLeft: 5, marginRight: 5, fontSize: "2em", color: (i === 1 ? "red" : "black") }}>{i}</p>)
         }
         return retVal;
     }
@@ -129,8 +129,8 @@ class Methods extends Component {
 
     reset(arr) {
         arr.forEach(x => {
-            let elem = document.getElementById(x.props.id)
-            elem.style.color = x.props.children == "1" ? "red" : "black";
+            let elem = document.getElementById(x.props.id);
+            elem.style.color = x.props.children === "1" ? "red" : "black";
             elem.className = "prime_base";
         });
     }
@@ -172,7 +172,7 @@ class Methods extends Component {
                                     Under vil du finne en demo hvordan maskinen jobber basert på det vi har snakket om til nå. Under finner du
                                     skal forstå de ulike stegene i demoen.
                                 </p>
-                                <img style={{ display: "block", margin: "auto" }} src="https://i.imgur.com/7lnU4bP.png"></img>
+                                <img alt="" style={{ display: "block", margin: "auto" }} src="https://i.imgur.com/7lnU4bP.png"></img>
                                 <hr></hr>
                                 <h5>Demo 1</h5>
                                 {this.state.slowArray}

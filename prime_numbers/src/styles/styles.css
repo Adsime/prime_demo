@@ -84,5 +84,5 @@ td, th {
 }
 
 body{
-    overflow: hidden;
+    overflow-x: hidden;
 }

@@ -53,17 +53,17 @@ class Generator extends Component {
 
     render() {
         return (
-            <div class="container">
+            <div className="container">
                 <Card color="white" className="shadow p-3 mb-5 rounded">
                     <CardBody>
                         <CardTitle tag="h3">La oss se hvor fort vi kan få dette til å gå...</CardTitle>
                         <hr></hr>
                         <CardText tag="div">
-                            <div class="container">
-                                <p id="gen_text" class="gen_numbers" onClick={this.test}>{this.state.current}</p>
+                            <div className="container">
+                                <p id="gen_text" className="gen_numbers" onClick={this.test}>{this.state.current}</p>
                             </div>
                             <hr></hr>
-                            <div class="container">
+                            <div className="container">
                                 <h4>Det er ganske vanskelig å følge med! Under her kommer litt live statistikk :)</h4>
                                 <ul>
                                     <li>Til nå har vi funnet {this.state.count} primtall.</li>

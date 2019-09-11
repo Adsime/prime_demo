@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link, NavLink as RouterNavLink } from 'react-router-dom';
-import { Collapse, Nav, Navbar, NavbarToggler, NavItem, Modal, Button, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { Navbar, Modal, Button, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class NavigationAppBar extends Component {
     constructor(props) {
@@ -27,7 +27,7 @@ class NavigationAppBar extends Component {
 
     handlePizza() {
         let elem = document.getElementById("pizza");
-        elem.className = elem.className == "pizza_right" ? "pizza_left" : "pizza_right";
+        elem.className = elem.className === "pizza_right" ? "pizza_left" : "pizza_right";
     }
 
     render() {
@@ -35,14 +35,11 @@ class NavigationAppBar extends Component {
             <>
                 <Navbar color="dark" dark expand="md" fixed="top">
                     <Link to="/" className="navbar-brand">Primtall!</Link>
-                    <img src="https://media1.giphy.com/media/10ZEUsmynGEGT6/source.gif" style={{ height: 5 + "em" }}></img>
-                    <button class="btn btn-link" onClick={this.popModal}>
-                        <img src="https://i.pinimg.com/originals/3f/2c/97/3f2c979b214d06e9caab8ba8326864f3.gif" style={{ height: 5 + "em" }}></img>
+                    <img alt="" src="https://media1.giphy.com/media/10ZEUsmynGEGT6/source.gif" style={{ height: 5 + "em" }}></img>
+                    <button className="btn btn-link" onClick={this.popModal}>
+                        <img alt="" src="https://i.pinimg.com/originals/3f/2c/97/3f2c979b214d06e9caab8ba8326864f3.gif" style={{ height: 5 + "em" }}></img>
                     </button>
-                    <img src="https://media1.giphy.com/media/10ZEUsmynGEGT6/source.gif" style={{ height: 5 + "em" }}></img>
-                    <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-                    <Collapse isOpen={!this.state.collapsed} navbar>
-                    </Collapse>
+                    <img alt="" src="https://media1.giphy.com/media/10ZEUsmynGEGT6/source.gif" style={{ height: 5 + "em" }}></img>
                 </Navbar>
 
 
@@ -58,7 +55,7 @@ class NavigationAppBar extends Component {
                     </ModalFooter>
                 </Modal>
                 <div>
-                    <img id="pizza" className="pizza_right" onClick={this.handlePizza} src="https://pngriver.com/wp-content/uploads/2018/04/Download-Pepperoni-Pizza.png" width="400px"></img>
+                    <img id="pizza" alt="" className="pizza_right" onClick={this.handlePizza} src="https://pngriver.com/wp-content/uploads/2018/04/Download-Pepperoni-Pizza.png" width="400px"></img>
                 </div>
             </>
         );
