@@ -130,7 +130,7 @@ class Methods extends Component {
     reset(arr) {
         arr.forEach(x => {
             let elem = document.getElementById(x.props.id);
-            elem.style.color = x.props.children === "1" ? "red" : "black";
+            elem.style.color = x.props.children == "1" ? "red" : "black";
             elem.className = "prime_base";
         });
     }

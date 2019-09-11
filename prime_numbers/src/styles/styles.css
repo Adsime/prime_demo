@@ -82,7 +82,3 @@ td, th {
         transform: translateX(20%) rotateZ(-1turn);
 	}
 }
-
-body{
-    overflow-x: hidden;
-}

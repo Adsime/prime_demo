@@ -27,7 +27,7 @@ class NavigationAppBar extends Component {
 
     handlePizza() {
         let elem = document.getElementById("pizza");
-        elem.className = elem.className === "pizza_right" ? "pizza_left" : "pizza_right";
+        elem.className = elem.className == "pizza_right" ? "pizza_left" : "pizza_right";
     }
 
     render() {
